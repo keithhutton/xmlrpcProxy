@@ -1,0 +1,14 @@
+    Build the xmlrpcProxy using Maven from the command line:
+
+    mvn clean package
+
+    This will create an executable jar called xmlrpcProxy-<version>.jar
+    where <version> corresponds to the <version> element in the pom.xml file
+    e.g. <version>1.0.0</version> produces xmlrpcProxy-1.0.0.jar
+    
+    Run the xmlrpc proxy from the command line e.g.
+    
+    java -Dserver.port=8082 -DXmlRpcServlet.destinationURL=http://localhost:8080/xmlrpc -DXmlRpcServlet.username=User -DXmlRpcServlet.password=pwd -jar xmlrpcProxy\target\xmlrpcProxy-1.0.0.jar
+    
+    This command starts the proxy listening on port 8082 for any xmlrpc calls to proxy to the destination specified i.e. http://localhost:8080/xmlrpc
+    
