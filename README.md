@@ -1,8 +1,10 @@
 General information
 -------------------
 
-The Xmlrpc proxy acts as a proxy for Xmlrpc calls.
-It may be useful for calling web services that require Java 7 or higher to
+The Xmlrpc proxy acts as a proxy for Xmlrpc calls.  All the hard work is
+done by Spring Boot and the Apache XmlRpc libraries, plus some slightly modified code
+taken from the Apache XmlRpc source.
+This proxy may be useful for calling web services that require Java 7 or higher to
 work with HTTPS from legacy systems running on Java 6 or lower that cannot be
 easily migrated to a higher version of Java.
 
